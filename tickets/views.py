@@ -8,3 +8,4 @@ class SurveyDetailView(generics.RetrieveAPIView):
 
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
+    lookup_field = 'id'
